@@ -1,0 +1,36 @@
+
+
+
+#### single kafka
+```
+docker-compose -f zk-single-kafka-single.yml up
+```
+
+#### kafka multi
+```
+docker-compose -f zk-single-kafka-single.yml up
+```
+
+#### creat test
+root@kafka1:/# 
+
+```
+docker exec -ti containerID bash
+kafka-topics --describe --zookeeper zoo1:2181
+kafka-topics --create --topic test --partitions 3 --zookeeper zoo1:2181 --replication-factor 1 Created topic test
+```
+
+### more docker 
+```
+docker stop $(docker ps -aq)    
+docker rm $(docker ps -aq)    
+docker rmi $(docker images -q)
+```
+
+
+
+#### reference
+
+https://zhuanlan.zhihu.com/p/109753979
+https://docs.confluent.io/current/quickstart/ce-docker-quickstart.html?utm_medium=sem&utm_source=google&utm_campaign=ch.sem_br.nonbrand_tp.prs_tgt.kafka_mt.mbm_rgn.namer_lng.eng_dv.all&utm_term=%2Bkafka%20%2Bdocker&creative=&device=c&placement=&gclid=CjwKCAjwmKLzBRBeEiwACCVihhqB0F_w0jQycJ4FhdBdOivyybwGb7wVtkeluq_QbD-TckvQGfeVixoCznkQAvD_BwE
+
