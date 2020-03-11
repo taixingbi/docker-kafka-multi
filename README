@@ -2,8 +2,9 @@
 
 
 #### single kafka
+
 ```
-docker-compose -f zk-single-kafka-single.yml up
+  docker-compose -f zk-single-kafka-single.yml up
 ```
 
 #### kafka multi
