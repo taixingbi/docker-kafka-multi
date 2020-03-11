@@ -17,8 +17,8 @@ root@kafka1:/#
 
 ```
 docker exec -ti containerID bash
-kafka-topics --describe --zookeeper zoo1:2181
 kafka-topics --create --topic test --partitions 3 --zookeeper zoo1:2181 --replication-factor 1 Created topic test
+kafka-topics --describe --zookeeper zoo1:2181
 ```
 
 ### more docker 
