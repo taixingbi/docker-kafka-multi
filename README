@@ -4,7 +4,7 @@
 #### single kafka
 
 ```
-  docker-compose -f kafka-single.yml up
+  docker-compose -f kafka-single.yml up -d
 ```
 
 #### kafka multi
