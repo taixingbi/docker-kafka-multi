@@ -9,7 +9,7 @@
 
 #### kafka multi
 ```
-docker-compose -f kafka-multi.yml up
+docker-compose -f kafka-multiple.yml up
 ```
 
 #### creat test
