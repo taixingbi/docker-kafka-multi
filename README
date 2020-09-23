@@ -4,12 +4,12 @@
 #### single kafka
 
 ```
-  docker-compose -f kafka-single.yml up -d
+sudo  docker-compose -f kafka-single.yml up -d
 ```
 
 #### kafka multi
 ```
-docker-compose -f kafka-multiple.yml up
+sudo docker-compose -f kafka-multiple.yml up -d
 ```
 
 #### creat test
